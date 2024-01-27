@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public class GlobalGameInstance
 {
 
@@ -6,6 +8,8 @@ public class GlobalGameInstance
 
     private Character _player;
     private Character _enemy;
+    private Dictionary<int, Card> _cardData;
+
 
     public static GlobalGameInstance Instance
     {
@@ -46,8 +50,16 @@ public class GlobalGameInstance
         }
     }
 
+    public Dictionary<int, Card> CardData
+    {
+        get
+        {
+            return _cardData;
+        }
+    }
+
     private GlobalGameInstance()
     {
-
+        _cardData = new Dictionary<int, Card>();
     }
 }

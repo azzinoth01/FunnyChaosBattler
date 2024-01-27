@@ -11,7 +11,7 @@ public class Character
     [SerializeField] private int _laughter;
     [SerializeField] private int _maxLaughter;
     [SerializeField] private Image _laughterBar;
-
+    [SerializeField] private TypeEnum _type;
 
 
 
@@ -21,14 +21,22 @@ public class Character
         _laughter = _maxLaughter;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, TypeEnum type = TypeEnum.None)
     {
+
+        if (_laughter > 0)
+        {
+            return;
+        }
+
+        // damage = (int)(damage * _type.GetTypeMultiplier(type));
         _hp = _hp - damage;
         UpdateHpBar();
     }
 
-    public void LaughterDamage(int damage)
+    public void LaughterDamage(int damage, TypeEnum type = TypeEnum.None)
     {
+        damage = (int)(damage * _type.GetTypeMultiplier(type));
         _laughter = _laughter - damage;
         UpdateLaughterBar();
     }
