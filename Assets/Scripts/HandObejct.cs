@@ -40,6 +40,8 @@ public class HandObejct : MonoBehaviour
                 GlobalGameInstance.Instance.Enemy.TakeDamage(effect.Value, effect.Type);
             }
         }
+
+        GlobalGameInstance.Instance.TurnHandler.EndTurn();
     }
 
 }
