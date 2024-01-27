@@ -15,14 +15,14 @@ public class HandObejct : MonoBehaviour
         foreach (Button button in _cardButtons)
         {
             Card card = GlobalGameInstance.Instance.CardData.Values.ToArray()[counter];
-            button.onClick.AddListener(() => UseCard(card.Id));
+            button.onClick.AddListener(() => UseCard(card.Id, button.gameObject));
             counter = counter + 1;
         }
     }
 
 
 
-    private void UseCard(int cardId)
+    private void UseCard(int cardId, GameObject button)
     {
         Card card = GlobalGameInstance.Instance.CardData[cardId];
 
@@ -41,7 +41,18 @@ public class HandObejct : MonoBehaviour
             }
         }
 
-        GlobalGameInstance.Instance.TurnHandler.EndTurn();
+        button.gameObject.SetActive(false);
+
+        if (GlobalGameInstance.Instance.Enemy.Hp <= 0)
+        {
+            GlobalGameInstance.Instance.WinScreen.SetActive(true);
+        }
+        else
+        {
+            GlobalGameInstance.Instance.TurnHandler.EndTurn();
+
+        }
+
     }
 
 }

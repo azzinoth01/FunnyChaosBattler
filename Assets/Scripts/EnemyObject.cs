@@ -27,7 +27,16 @@ public class EnemyObject : MonoBehaviour
         _enemy.EnemyTurnDmg();
         yield return new WaitForSeconds(1);
 
-        GlobalGameInstance.Instance.TurnHandler.EndTurn();
+        if (GlobalGameInstance.Instance.Player.Hp <= 0)
+        {
+            GlobalGameInstance.Instance.LoseScreen.SetActive(true);
+        }
+        else
+        {
+            GlobalGameInstance.Instance.TurnHandler.EndTurn();
+        }
+
+
 
     }
 
