@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class HandObejct : MonoBehaviour
 {
     [SerializeField] private List<Button> _cardButtons;
-
+    public GameObject currentlyHoveredCard;
+    public GameObject nextHoveredCard;
 
     // Start is called before the first frame update
     void Start()
