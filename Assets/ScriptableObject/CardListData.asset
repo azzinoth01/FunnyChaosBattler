@@ -30,7 +30,7 @@ MonoBehaviour:
       _skillType: 0
   - _id: 3
     _cardEffects:
-    - _value: 2
+    - _value: 10
       _type: 0
       _skillType: 1
   - _id: 4
