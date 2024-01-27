@@ -41,7 +41,16 @@ public class HandObejct : MonoBehaviour
             }
         }
 
-        GlobalGameInstance.Instance.TurnHandler.EndTurn();
+        if (GlobalGameInstance.Instance.Enemy.Hp <= 0)
+        {
+            GlobalGameInstance.Instance.WinScreen.SetActive(true);
+        }
+        else
+        {
+            GlobalGameInstance.Instance.TurnHandler.EndTurn();
+
+        }
+
     }
 
 }
