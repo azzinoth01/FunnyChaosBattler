@@ -1,9 +1,51 @@
+using System;
+using UnityEngine;
+
+[Serializable]
 public class CardEffect
 {
 
 
-    private int _value;
-    private TypeEnum _type;
-    private SkillTypeEnum _skillType;
+    [SerializeField] private int _value;
+    [SerializeField] private TypeEnum _type;
+    [SerializeField] private SkillTypeEnum _skillType;
 
+    public int Value
+    {
+        get
+        {
+            return _value;
+        }
+
+        set
+        {
+            _value = value;
+        }
+    }
+
+    public TypeEnum Type
+    {
+        get
+        {
+            return _type;
+        }
+
+        set
+        {
+            _type = value;
+        }
+    }
+
+    public SkillTypeEnum SkillType
+    {
+        get
+        {
+            return _skillType;
+        }
+
+        set
+        {
+            _skillType = value;
+        }
+    }
 }
