@@ -360,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -295.00003
+      value: -407
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5851028129120433724, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 1615258879}
     - target: {fileID: 7025647368495814693, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Name
       value: Card1
@@ -613,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 563
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -631,6 +635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5851028129120433724, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 1615258879}
     - target: {fileID: 7025647368495814693, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Name
       value: Card4
@@ -1039,6 +1047,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5851028129120433724, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 1615258879}
     - target: {fileID: 7025647368495814693, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Name
       value: Card0
@@ -2241,6 +2253,8 @@ MonoBehaviour:
   - {fileID: 707992443}
   - {fileID: 1407835305}
   - {fileID: 1093830018}
+  currentlyHoveredCard: {fileID: 0}
+  nextHoveredCard: {fileID: 0}
 --- !u!1 &1680659344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,7 +2400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 275.99997
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2404,6 +2418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5851028129120433724, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 1615258879}
     - target: {fileID: 7025647368495814693, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Name
       value: Card3
@@ -2483,7 +2501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -9.0000305
+      value: -271
       objectReference: {fileID: 0}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2501,6 +2519,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5851028129120433724, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: Hand
+      value: 
+      objectReference: {fileID: 1615258879}
     - target: {fileID: 7025647368495814693, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Name
       value: Card2
