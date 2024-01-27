@@ -12,8 +12,29 @@ public class Character
     [SerializeField] private int _maxLaughter;
     [SerializeField] private Image _laughterBar;
     [SerializeField] private TypeEnum _type;
+    [SerializeField] private int _enemyDmg;
+
+    private int _enemyReaction;
+
+    public int Hp
+    {
+        get
+        {
+            return _hp;
+        }
 
 
+    }
+
+    public int Laughter
+    {
+        get
+        {
+            return _laughter;
+        }
+
+
+    }
 
     public void Initzialize()
     {
@@ -36,7 +57,22 @@ public class Character
 
     public void LaughterDamage(int damage, TypeEnum type = TypeEnum.None)
     {
-        damage = (int)(damage * _type.GetTypeMultiplier(type));
+
+        float multiplier = _type.GetTypeMultiplier(type);
+        if (multiplier == 2)
+        {
+            _enemyReaction = -1;
+        }
+        else if (multiplier == 1)
+        {
+            _enemyReaction = 0;
+        }
+        else
+        {
+            _enemyReaction = 1;
+        }
+
+        damage = (int)(damage * multiplier);
         _laughter = _laughter - damage;
         UpdateLaughterBar();
     }
@@ -52,5 +88,35 @@ public class Character
     private void UpdateLaughterBar()
     {
         _laughterBar.fillAmount = (float)_laughter / _maxLaughter;
+    }
+
+
+
+    public void EnemyTurnDmg()
+    {
+        int damage = 0;
+        if (_enemyReaction == -1)
+        {
+            damage = 0;
+        }
+        else if (_enemyReaction == 0)
+        {
+            damage = 1;
+        }
+        else
+        {
+            damage = 2;
+        }
+
+        damage = _enemyDmg * damage;
+
+        if (GlobalGameInstance.Instance.Player.Laughter > 0)
+        {
+            GlobalGameInstance.Instance.Player.LaughterDamage(damage);
+        }
+        else
+        {
+            GlobalGameInstance.Instance.Player.TakeDamage(damage);
+        }
     }
 }

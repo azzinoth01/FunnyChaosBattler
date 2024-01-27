@@ -1,3 +1,5 @@
+using System.Collections;
+
 using UnityEngine;
 
 public class EnemyObject : MonoBehaviour
@@ -9,9 +11,25 @@ public class EnemyObject : MonoBehaviour
     {
         _enemy.Initzialize();
         GlobalGameInstance.Instance.Enemy = _enemy;
+        GlobalGameInstance.Instance.EnemyObject = this;
     }
 
 
+    public void EnemyTurn()
+    {
+        StartCoroutine(StartEnemyTurn());
+    }
+
+    private IEnumerator StartEnemyTurn()
+    {
+        yield return new WaitForSeconds(1);
+
+        _enemy.EnemyTurnDmg();
+        yield return new WaitForSeconds(1);
+
+        GlobalGameInstance.Instance.TurnHandler.EndTurn();
+
+    }
 
 
     [ContextMenu("Take DMG")]
