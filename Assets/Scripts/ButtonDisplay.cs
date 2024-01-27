@@ -5,7 +5,6 @@ public class ButtonDisplay : MonoBehaviour
 {
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -28,4 +27,5 @@ public class ButtonDisplay : MonoBehaviour
         button.interactable = !button.interactable;
 
     }
+
 }
