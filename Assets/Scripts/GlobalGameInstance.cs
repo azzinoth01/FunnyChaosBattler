@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 public class GlobalGameInstance
 {
@@ -12,6 +13,8 @@ public class GlobalGameInstance
     private Dictionary<int, Card> _cardData;
     private bool _playerTurn;
     private TurnHandler _turnHandler;
+    private GameObject _loseScreen;
+    private GameObject _winScreen;
 
     public static GlobalGameInstance Instance
     {
@@ -96,6 +99,32 @@ public class GlobalGameInstance
         set
         {
             _turnHandler = value;
+        }
+    }
+
+    public GameObject LoseScreen
+    {
+        get
+        {
+            return _loseScreen;
+        }
+
+        set
+        {
+            _loseScreen = value;
+        }
+    }
+
+    public GameObject WinScreen
+    {
+        get
+        {
+            return _winScreen;
+        }
+
+        set
+        {
+            _winScreen = value;
         }
     }
 
