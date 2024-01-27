@@ -7,12 +7,16 @@ using UnityEngine.EventSystems;
 public class HandHover : MonoBehaviour
 {
     public int currentHandPosition = 0;
+    public Vector3 startingScale, newScale;
+    public GameObject thisGameObject;
     public static bool pointerIsEntered = false;
     public HandObejct Hand;
 
     private void Start()
     {
         EventTrigger trigger = GetComponent<EventTrigger>();
+        startingScale = new Vector3(1, 1, 1);
+        newScale = new Vector3(4, 4, 4);
     }
 
     IEnumerator WaitBetweenCards()
@@ -28,6 +32,7 @@ public class HandHover : MonoBehaviour
 
     public void OnPointerEnter()
     {
+        transform.localScale = newScale;
         if (Hand.currentlyHoveredCard != null)
         {
             Hand.nextHoveredCard = gameObject;
@@ -41,6 +46,7 @@ public class HandHover : MonoBehaviour
 
     public void OnPointerExit()
     {
+        transform.localScale = startingScale;
         if(Hand.currentlyHoveredCard == gameObject)
         {
             Hand.currentlyHoveredCard = null;
