@@ -1572,7 +1572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 827018726184678528, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530269706267164741, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
+      propertyPath: m_text
+      value: Whom should'st I sacrifice next....?
       objectReference: {fileID: 0}
     - target: {fileID: 4027700506593154180, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_Pivot.x
