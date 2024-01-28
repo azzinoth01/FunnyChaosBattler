@@ -15,6 +15,9 @@ public class HandObejct : MonoBehaviour
     [SerializeField] private List<AudioClip> _attackSounds;
     [SerializeField] private List<AudioClip> _impacktSounds;
 
+    [SerializeField] private Sprite _attackSprite;
+    [SerializeField] private Sprite _idleSprite;
+
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +59,7 @@ public class HandObejct : MonoBehaviour
         foreach (CardEffect textEffect in card.CardEffects)
         {
             bool playerText = true;
+            int count = 0;
             foreach (string text in textEffect.Text)
             {
                 if (playerText == true)
@@ -73,7 +77,9 @@ public class HandObejct : MonoBehaviour
                     textfield.text = text;
                 }
                 playerText = !playerText;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(textEffect.TextDelay[count]);
+
+                count = count + 1;
             }
 
         }
@@ -81,6 +87,9 @@ public class HandObejct : MonoBehaviour
         GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
         GlobalGameInstance.Instance.PlayerTextBubble.SetActive(false);
 
+        SpriteRenderer render = GlobalGameInstance.Instance.PlayerObject.GetComponent<SpriteRenderer>();
+
+        render.sprite = _attackSprite;
 
         _audioSource.clip = _attackSounds[Random.Range(0, _attackSounds.Count)];
 
@@ -103,7 +112,10 @@ public class HandObejct : MonoBehaviour
             {
                 GlobalGameInstance.Instance.Enemy.TakeDamage(effect.Value, effect.Type);
             }
+
         }
+
+        yield return new WaitForSeconds(0.3f);
 
         if (GlobalGameInstance.Instance.Enemy.Hp <= 0)
         {
@@ -111,9 +123,13 @@ public class HandObejct : MonoBehaviour
         }
         else
         {
+
+
             GlobalGameInstance.Instance.TurnHandler.EndTurn();
 
         }
     }
+
+
 
 }

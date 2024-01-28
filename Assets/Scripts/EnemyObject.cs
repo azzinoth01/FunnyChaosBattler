@@ -12,6 +12,10 @@ public class EnemyObject : MonoBehaviour
     [SerializeField] private List<AudioClip> _eneymAttackSound;
     [SerializeField] private List<AudioClip> _enemyImpactSound;
 
+    [SerializeField] private Sprite _idleSprite;
+
+
+    [SerializeField] private Sprite _attackSprite;
     // Start is called before the first frame update
     void Awake()
     {
@@ -30,9 +34,17 @@ public class EnemyObject : MonoBehaviour
 
     private IEnumerator StartEnemyTurn()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
+
+        SpriteRenderer render = gameObject.GetComponent<SpriteRenderer>();
+        render.sprite = _idleSprite;
+
+        yield return new WaitForSeconds(0.5f);
+
         _audioSource.clip = _eneymAttackSound[Random.Range(0, _eneymAttackSound.Count)];
         _audioSource.Play();
+
+        render.sprite = _attackSprite;
 
         yield return new WaitForSeconds(_audioSource.clip.length);
 
@@ -40,7 +52,12 @@ public class EnemyObject : MonoBehaviour
         _audioSource.Play();
 
         _enemy.EnemyTurnDmg();
+
+        render.sprite = _idleSprite;
+
         yield return new WaitForSeconds(0.3f);
+
+
 
         if (GlobalGameInstance.Instance.Player.Hp <= 0)
         {
