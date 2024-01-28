@@ -8,13 +8,16 @@ public class TurnHandler : MonoBehaviour
 
     [SerializeField] private TMPro.TextMeshProUGUI _turnChangeText;
 
+    [SerializeField] private Sprite _idleAnimation;
+
     public void EndTurn()
     {
 
 
         GlobalGameInstance.Instance.PlayerTurn = !GlobalGameInstance.Instance.PlayerTurn;
 
-
+        GlobalGameInstance.Instance.PlayerObject.GetComponent<SpriteRenderer>().sprite = _idleAnimation;
+        GlobalGameInstance.Instance.EnemyObject.GetComponent<SpriteRenderer>().sprite = _idleAnimation;
 
         if (GlobalGameInstance.Instance.PlayerTurn == false)
         {

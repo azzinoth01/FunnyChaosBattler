@@ -31,6 +31,9 @@ public class Character
     [SerializeField] private List<string> _halfDmgTakenTexts;
     [SerializeField] private List<string> _laughterTexts;
 
+    [SerializeField] private Sprite _hitSprite;
+    [SerializeField] private Sprite _laughterSprite;
+
     public int Hp
     {
         get
@@ -71,13 +74,13 @@ public class Character
 
 
         _audioSource.clip = _dmgTakenSound[Random.Range(0, _dmgTakenSound.Count)];
-
+        _audioSource.gameObject.GetComponent<SpriteRenderer>().sprite = _hitSprite;
         UpdateHpBar();
     }
 
     public void LaughterDamage(int damage, TypeEnum type = TypeEnum.None)
     {
-
+        GameObject gameObject = _audioSource.gameObject;
         float multiplier = _type.GetTypeMultiplier(type);
 
 
@@ -109,10 +112,10 @@ public class Character
             }
         }
 
-
+        gameObject.GetComponent<SpriteRenderer>().sprite = _hitSprite;
         if (_laughter <= 0)
         {
-
+            gameObject.GetComponent<SpriteRenderer>().sprite = _laughterSprite;
             _audioSource.clip = _laughterBreak[Random.Range(0, _laughterBreak.Count)];
 
             if (this == GlobalGameInstance.Instance.Enemy)
