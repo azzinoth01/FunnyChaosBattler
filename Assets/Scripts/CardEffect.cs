@@ -1,15 +1,14 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
 public class CardEffect
 {
-
-
     [SerializeField] private int _value;
     [SerializeField] private TypeEnum _type;
     [SerializeField] private SkillTypeEnum _skillType;
-    [SerializeField] private string _text;
+    [SerializeField] private List<string> _text;
 
     public int Value
     {
@@ -50,5 +49,16 @@ public class CardEffect
         }
     }
 
-    public string Text { get => _text; set => _text = value; }
+    public List<string> Text
+    {
+        get
+        {
+            return _text;
+        }
+
+        set
+        {
+            _text = value;
+        }
+    }
 }

@@ -26,7 +26,10 @@ public class Character
     [SerializeField] private List<AudioClip> _laughterBreak;
 
 
-
+    [SerializeField] private List<string> _dmgTakenTexts;
+    [SerializeField] private List<string> _doubleDmgTakenTexts;
+    [SerializeField] private List<string> _halfDmgTakenTexts;
+    [SerializeField] private List<string> _laughterTexts;
 
     public int Hp
     {
@@ -112,6 +115,8 @@ public class Character
 
             _audioSource.clip = _laughterBreak[Random.Range(0, _laughterBreak.Count)];
 
+            GlobalGameInstance.Instance.EnemyObject.EnemyComebackText(_laughterTexts[Random.Range(0, _laughterTexts.Count)]);
+
         }
 
         _audioSource.Play();
@@ -137,19 +142,23 @@ public class Character
     public void EnemyTurnDmg()
     {
 
-
+        EnemyObject enemy = GlobalGameInstance.Instance.EnemyObject;
         int damage;
         if (_enemyReaction == -1)
         {
             damage = 0;
+            enemy.EnemyComebackText(_doubleDmgTakenTexts[Random.Range(0, _doubleDmgTakenTexts.Count)]);
+
         }
         else if (_enemyReaction == 0)
         {
             damage = 1;
+            enemy.EnemyComebackText(_dmgTakenTexts[Random.Range(0, _dmgTakenTexts.Count)]);
         }
         else
         {
             damage = 2;
+            enemy.EnemyComebackText(_halfDmgTakenTexts[Random.Range(0, _halfDmgTakenTexts.Count)]);
         }
 
         damage = _enemyDmg * damage;

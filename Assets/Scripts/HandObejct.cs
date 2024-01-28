@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,6 +52,33 @@ public class HandObejct : MonoBehaviour
 
     private IEnumerator AttackSound(Card card)
     {
+
+        foreach (CardEffect textEffect in card.CardEffects)
+        {
+            bool playerText = true;
+            foreach (string text in textEffect.Text)
+            {
+                if (playerText == true)
+                {
+                    GlobalGameInstance.Instance.PlayerTextBubble.SetActive(true);
+                    GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
+                    TextMeshProUGUI textfield = GlobalGameInstance.Instance.PlayerTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+                    textfield.text = text;
+                }
+                else
+                {
+                    GlobalGameInstance.Instance.PlayerTextBubble.SetActive(false);
+                    GlobalGameInstance.Instance.EnemyTextBubble.SetActive(true);
+                    TextMeshProUGUI textfield = GlobalGameInstance.Instance.EnemyTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+                    textfield.text = text;
+                }
+
+                yield return new WaitForSeconds(1);
+            }
+
+        }
+
+
         _audioSource.clip = _attackSounds[Random.Range(0, _attackSounds.Count)];
 
         _audioSource.Play();
