@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,6 +9,11 @@ public class HandObejct : MonoBehaviour
     [SerializeField] private List<Button> _cardButtons;
     public GameObject currentlyHoveredCard;
     public GameObject nextHoveredCard;
+
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private List<AudioClip> _attackSounds;
+    [SerializeField] private List<AudioClip> _impacktSounds;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +31,31 @@ public class HandObejct : MonoBehaviour
 
     private void UseCard(int cardId, GameObject button)
     {
+
+
         Card card = GlobalGameInstance.Instance.CardData[cardId];
 
+        StartCoroutine(AttackSound(card));
+
+
+
+
+        button.gameObject.SetActive(false);
+
+        GlobalGameInstance.Instance.TurnHandler.InvokeTurnChangeEvent();
+
+    }
+
+    private IEnumerator AttackSound(Card card)
+    {
+        _audioSource.clip = _attackSounds[Random.Range(0, _attackSounds.Count)];
+
+        _audioSource.Play();
+
+        yield return new WaitForSeconds(_audioSource.clip.length);
+
+        _audioSource.clip = _impacktSounds[Random.Range(0, _impacktSounds.Count)];
+        _audioSource.Play();
 
         foreach (CardEffect effect in card.CardEffects)
         {
@@ -42,8 +71,6 @@ public class HandObejct : MonoBehaviour
             }
         }
 
-        button.gameObject.SetActive(false);
-
         if (GlobalGameInstance.Instance.Enemy.Hp <= 0)
         {
             GlobalGameInstance.Instance.WinScreen.SetActive(true);
@@ -53,7 +80,6 @@ public class HandObejct : MonoBehaviour
             GlobalGameInstance.Instance.TurnHandler.EndTurn();
 
         }
-
     }
 
 }
