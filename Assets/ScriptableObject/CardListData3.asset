@@ -18,28 +18,34 @@ MonoBehaviour:
     - _value: 5
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - What doth a cloud wear under their raincoat? Thunderwear.
   - _id: 1
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - Were I tasked to save twain of each animal. Well, I Noah guy.
   - _id: 2
     _cardEffects:
     - _value: 1
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - Mine mother duels better than thou! And that though she already croaked.
   - _id: 3
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 1
-      _text: []
+      _text:
+      - Thou shalt perish!
   - _id: 4
     _cardEffects:
     - _value: 5
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - For what hath the actor fall through the floorboards? They were going through
+        a stage!

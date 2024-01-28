@@ -18,28 +18,33 @@ MonoBehaviour:
     - _value: 5
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - How appropriate, thou fight as a cow!
   - _id: 1
     _cardEffects:
     - _value: 1
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - I am the ace of disgrace!
   - _id: 2
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - What doth thou bid a fish wearing a bowtie? Sofishticated!!
   - _id: 3
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - 'Dad, didst thou get a haircut? Ney, I hast cuteth them all! '
   - _id: 4
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 1
-      _text: []
+      _text:
+      - En garde!

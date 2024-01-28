@@ -278,6 +278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.076
       objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Make a forboding quip
+      objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 8.710007
@@ -735,6 +739,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.525
       objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Paunch true at their core
+      objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 8.710007
@@ -979,7 +987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 827018726184678528, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530269706267164741, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
+      propertyPath: m_text
+      value: Whom should'st I sacrifice next....?
       objectReference: {fileID: 0}
     - target: {fileID: 4027700506593154180, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_Pivot.x
@@ -1336,6 +1348,10 @@ PrefabInstance:
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.783
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Disarm them with playful words
       objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2167,6 +2183,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.467
       objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Say to them a classic joke
+      objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 8.710007
@@ -2279,6 +2299,10 @@ PrefabInstance:
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Say to them a classic joke
       objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3097,6 +3121,14 @@ PrefabInstance:
       propertyPath: _enemy._laughterBar
       value: 
       objectReference: {fileID: 1680659346}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._dmgTakenTexts.Array.data[0]
+      value: I suppose that was funny.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._halfDmgTakenTexts.Array.data[0]
+      value: Mine sibling of five is funnier than thou
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
