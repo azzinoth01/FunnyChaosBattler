@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,9 @@ public class HandObejct : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private List<AudioClip> _attackSounds;
     [SerializeField] private List<AudioClip> _impacktSounds;
+
+    [SerializeField] private Sprite _attackSprite;
+    [SerializeField] private Sprite _idleSprite;
 
 
     // Start is called before the first frame update
@@ -51,6 +55,42 @@ public class HandObejct : MonoBehaviour
 
     private IEnumerator AttackSound(Card card)
     {
+
+        foreach (CardEffect textEffect in card.CardEffects)
+        {
+            bool playerText = true;
+            int count = 0;
+            foreach (string text in textEffect.Text)
+            {
+                if (playerText == true)
+                {
+                    GlobalGameInstance.Instance.PlayerTextBubble.SetActive(true);
+                    GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
+                    TextMeshProUGUI textfield = GlobalGameInstance.Instance.PlayerTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+                    textfield.text = text;
+                }
+                else
+                {
+                    GlobalGameInstance.Instance.PlayerTextBubble.SetActive(false);
+                    GlobalGameInstance.Instance.EnemyTextBubble.SetActive(true);
+                    TextMeshProUGUI textfield = GlobalGameInstance.Instance.EnemyTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+                    textfield.text = text;
+                }
+                playerText = !playerText;
+                yield return new WaitForSeconds(textEffect.TextDelay[count]);
+
+                count = count + 1;
+            }
+
+        }
+
+        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
+        GlobalGameInstance.Instance.PlayerTextBubble.SetActive(false);
+
+        SpriteRenderer render = GlobalGameInstance.Instance.PlayerObject.GetComponent<SpriteRenderer>();
+
+        render.sprite = _attackSprite;
+
         _audioSource.clip = _attackSounds[Random.Range(0, _attackSounds.Count)];
 
         _audioSource.Play();
@@ -72,7 +112,10 @@ public class HandObejct : MonoBehaviour
             {
                 GlobalGameInstance.Instance.Enemy.TakeDamage(effect.Value, effect.Type);
             }
+
         }
+
+        yield return new WaitForSeconds(0.3f);
 
         if (GlobalGameInstance.Instance.Enemy.Hp <= 0)
         {
@@ -80,9 +123,13 @@ public class HandObejct : MonoBehaviour
         }
         else
         {
+
+
             GlobalGameInstance.Instance.TurnHandler.EndTurn();
 
         }
     }
+
+
 
 }

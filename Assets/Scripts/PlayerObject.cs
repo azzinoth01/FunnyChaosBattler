@@ -10,6 +10,7 @@ public class PlayerObject : MonoBehaviour
     {
         _player.Initzialize();
         GlobalGameInstance.Instance.Player = _player;
+        GlobalGameInstance.Instance.PlayerObject = this;
     }
 
 

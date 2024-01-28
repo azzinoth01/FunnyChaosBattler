@@ -26,7 +26,13 @@ public class Character
     [SerializeField] private List<AudioClip> _laughterBreak;
 
 
+    [SerializeField] private List<string> _dmgTakenTexts;
+    [SerializeField] private List<string> _doubleDmgTakenTexts;
+    [SerializeField] private List<string> _halfDmgTakenTexts;
+    [SerializeField] private List<string> _laughterTexts;
 
+    [SerializeField] private Sprite _hitSprite;
+    [SerializeField] private Sprite _laughterSprite;
 
     public int Hp
     {
@@ -68,13 +74,13 @@ public class Character
 
 
         _audioSource.clip = _dmgTakenSound[Random.Range(0, _dmgTakenSound.Count)];
-
+        _audioSource.gameObject.GetComponent<SpriteRenderer>().sprite = _hitSprite;
         UpdateHpBar();
     }
 
     public void LaughterDamage(int damage, TypeEnum type = TypeEnum.None)
     {
-
+        GameObject gameObject = _audioSource.gameObject;
         float multiplier = _type.GetTypeMultiplier(type);
 
 
@@ -106,11 +112,18 @@ public class Character
             }
         }
 
-
+        gameObject.GetComponent<SpriteRenderer>().sprite = _hitSprite;
         if (_laughter <= 0)
         {
-
+            gameObject.GetComponent<SpriteRenderer>().sprite = _laughterSprite;
             _audioSource.clip = _laughterBreak[Random.Range(0, _laughterBreak.Count)];
+
+            if (this == GlobalGameInstance.Instance.Enemy)
+            {
+                GlobalGameInstance.Instance.EnemyObject.EnemyComebackText(_laughterTexts[Random.Range(0, _laughterTexts.Count)]);
+            }
+
+
 
         }
 
@@ -137,19 +150,23 @@ public class Character
     public void EnemyTurnDmg()
     {
 
-
+        EnemyObject enemy = GlobalGameInstance.Instance.EnemyObject;
         int damage;
         if (_enemyReaction == -1)
         {
             damage = 0;
+            enemy.EnemyComebackText(_doubleDmgTakenTexts[Random.Range(0, _doubleDmgTakenTexts.Count)]);
+
         }
         else if (_enemyReaction == 0)
         {
             damage = 1;
+            enemy.EnemyComebackText(_dmgTakenTexts[Random.Range(0, _dmgTakenTexts.Count)]);
         }
         else
         {
             damage = 2;
+            enemy.EnemyComebackText(_halfDmgTakenTexts[Random.Range(0, _halfDmgTakenTexts.Count)]);
         }
 
         damage = _enemyDmg * damage;

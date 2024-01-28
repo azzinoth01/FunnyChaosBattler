@@ -15,6 +15,9 @@ public class GlobalGameInstance
     private TurnHandler _turnHandler;
     private GameObject _loseScreen;
     private GameObject _winScreen;
+    private GameObject _playerTextBubble;
+    private GameObject _enemyTextBubble;
+    private PlayerObject _playerObject;
 
     public static GlobalGameInstance Instance
     {
@@ -125,6 +128,45 @@ public class GlobalGameInstance
         set
         {
             _winScreen = value;
+        }
+    }
+
+    public GameObject PlayerTextBubble
+    {
+        get
+        {
+            return _playerTextBubble;
+        }
+
+        set
+        {
+            _playerTextBubble = value;
+        }
+    }
+
+    public GameObject EnemyTextBubble
+    {
+        get
+        {
+            return _enemyTextBubble;
+        }
+
+        set
+        {
+            _enemyTextBubble = value;
+        }
+    }
+
+    public PlayerObject PlayerObject
+    {
+        get
+        {
+            return _playerObject;
+        }
+
+        set
+        {
+            _playerObject = value;
         }
     }
 

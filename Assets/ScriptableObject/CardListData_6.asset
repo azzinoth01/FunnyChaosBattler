@@ -15,31 +15,38 @@ MonoBehaviour:
   _cards:
   - _id: 0
     _cardEffects:
-    - _value: 1
-      _type: 2
+    - _value: 10
+      _type: 0
       _skillType: 0
-      _text: 
+      _text:
+      - What didst the toilet say ere it refrained working? "I'm too ol' for this
+        shit. "
   - _id: 1
     _cardEffects:
     - _value: 1
-      _type: 0
+      _type: 1
       _skillType: 0
-      _text: 
+      _text:
+      - What is red and ill for thy teeth? A brick.
   - _id: 2
     _cardEffects:
     - _value: 10
-      _type: 2
+      _type: 0
       _skillType: 0
-      _text: 
+      _text:
+      - Politicians are like diapers, they want to be changed oft, and for the like
+        reasons.
   - _id: 3
     _cardEffects:
-    - _value: 10
-      _type: 1
+    - _value: 1
+      _type: 2
       _skillType: 0
-      _text: 
+      _text:
+      - A fellow walketh into a bar, what doth they say? Ow! Mine leg!
   - _id: 4
     _cardEffects:
     - _value: 10
       _type: 0
       _skillType: 1
-      _text: 
+      _text:
+      - En garde!

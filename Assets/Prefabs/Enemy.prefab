@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8377, y: 0.8764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,9 +75,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7eded1a75bb74844c92a9089be1465c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -105,7 +105,7 @@ MonoBehaviour:
     _laughter: 0
     _maxLaughter: 10
     _laughterBar: {fileID: 0}
-    _type: 2
+    _type: 0
     _enemyDmg: 10
     _audioSource: {fileID: 1686684016582843164}
     _dmgTakenSound:
@@ -122,6 +122,16 @@ MonoBehaviour:
     _laughterBreak:
     - {fileID: 8300000, guid: 114fa3d81f310ac419246b7ddb270d9b, type: 3}
     - {fileID: 8300000, guid: f7e5fef5078cae8468f39e18e84638e7, type: 3}
+    _dmgTakenTexts:
+    - normal joke
+    _doubleDmgTakenTexts:
+    - HAHAHA!
+    _halfDmgTakenTexts:
+    - bad joke
+    _laughterTexts:
+    - hahah
+    _hitSprite: {fileID: 21300000, guid: 85612569be955994a865f0cdc35284f2, type: 3}
+    _laughterSprite: {fileID: 21300000, guid: bba6f8d7ddd77904faf07c745a5e0cfd, type: 3}
   _audioSource: {fileID: 0}
   _eneymAttackSound:
   - {fileID: 8300000, guid: 2c8f21e1c27fd7743a655705c0bc7164, type: 3}
@@ -129,6 +139,8 @@ MonoBehaviour:
   _enemyImpactSound:
   - {fileID: 8300000, guid: 3b1f2657f3f465f4aa03d64cb7568929, type: 3}
   - {fileID: 8300000, guid: b72bdf320ed4d774d80bb337491ecb02, type: 3}
+  _idleSprite: {fileID: 21300000, guid: 7eded1a75bb74844c92a9089be1465c4, type: 3}
+  _attackSprite: {fileID: 21300000, guid: 9170e23410751d44c911bd4a9e670569, type: 3}
 --- !u!82 &1686684016582843164
 AudioSource:
   m_ObjectHideFlags: 0
