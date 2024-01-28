@@ -279,6 +279,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.076
       objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Disarm them with playful words
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3252297925870325987, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 8.710007
@@ -735,6 +755,26 @@ PrefabInstance:
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Attack notes only hurt opponent when defence is gone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3252297925870325987, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1337,6 +1377,26 @@ PrefabInstance:
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.783
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Disarm them with playful words
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3252297925870325987, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2300,6 +2360,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.467
       objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Make a forboding quip
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3252297925870325987, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 8.710007
@@ -2412,6 +2492,26 @@ PrefabInstance:
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_text
+      value: Say to them a classic joke
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3252297925870325987, guid: 079c7b899ae61d64091fe3951640bafa, type: 2}
+    - target: {fileID: 3219067323068050919, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4659333346024920584, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_AnchoredPosition.x
