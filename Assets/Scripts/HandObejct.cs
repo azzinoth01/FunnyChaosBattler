@@ -23,6 +23,9 @@ public class HandObejct : MonoBehaviour
         {
             Card card = GlobalGameInstance.Instance.CardData.Values.ToArray()[counter];
             button.onClick.AddListener(() => UseCard(card.Id, button.gameObject));
+            HandHover handHoverVar = button.gameObject.GetComponent<HandHover>();
+
+            handHoverVar.SetPositionOnHand(counter);
             counter = counter + 1;
         }
     }
