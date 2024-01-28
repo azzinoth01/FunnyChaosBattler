@@ -6,7 +6,7 @@ public class PlayerObject : MonoBehaviour
 
 
 
-    private void Start()
+    private void Awake()
     {
         _player.Initzialize();
         GlobalGameInstance.Instance.Player = _player;
