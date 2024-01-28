@@ -115,7 +115,12 @@ public class Character
 
             _audioSource.clip = _laughterBreak[Random.Range(0, _laughterBreak.Count)];
 
-            GlobalGameInstance.Instance.EnemyObject.EnemyComebackText(_laughterTexts[Random.Range(0, _laughterTexts.Count)]);
+            if (this == GlobalGameInstance.Instance.Enemy)
+            {
+                GlobalGameInstance.Instance.EnemyObject.EnemyComebackText(_laughterTexts[Random.Range(0, _laughterTexts.Count)]);
+            }
+
+
 
         }
 
