@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4020ccda74ec2a4db1db10bbd35fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardData: {fileID: 11400000, guid: ecd8ec688a3a8f644b4508e74d7b6230, type: 2}
+  _cardData: {fileID: 11400000, guid: ee6a7885a6fc38643bbcd71aaca9a1d1, type: 2}
   _winScreen: {fileID: 403067504}
   _loseScreen: {fileID: 280292631}
 --- !u!114 &178580066
@@ -301,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 167222287022012207, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a591811c715545742b05f756f88a2327, type: 3}
+      objectReference: {fileID: 21300000, guid: 678e0b0ef5f394d4fb19e80ad6af8788, type: 3}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

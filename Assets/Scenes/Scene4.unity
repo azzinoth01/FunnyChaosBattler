@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4020ccda74ec2a4db1db10bbd35fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardData: {fileID: 11400000, guid: ecd8ec688a3a8f644b4508e74d7b6230, type: 2}
+  _cardData: {fileID: 11400000, guid: 7104ee62d50111145a735b8a2b82ed2d, type: 2}
   _winScreen: {fileID: 403067504}
   _loseScreen: {fileID: 280292631}
 --- !u!114 &178580066
@@ -298,6 +298,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1615258878}
     m_Modifications:
+    - target: {fileID: 167222287022012207, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a591811c715545742b05f756f88a2327, type: 3}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1159,6 +1163,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1615258878}
     m_Modifications:
+    - target: {fileID: 167222287022012207, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b7e867ea2f84f5948baab097a02bd849, type: 3}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2327,7 +2335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -151}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615258879
@@ -2534,6 +2542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1615258878}
     m_Modifications:
+    - target: {fileID: 167222287022012207, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 988eec546a697924d879015afde0af19, type: 3}
     - target: {fileID: 2603992951438295308, guid: 48350ea44421ce848a9ec3919c8af34c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2838,7 +2850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: af1823ec059eafc4d81e34788b4f45aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
