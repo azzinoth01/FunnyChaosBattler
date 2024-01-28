@@ -18,28 +18,39 @@ MonoBehaviour:
     - _value: 5
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - How doth a cucumber become a pickle? It goes through a jarring experience.
+      _textDelay: []
   - _id: 1
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - How doth thou compose a good egg-roll? Thou pusheth it down a hill!
+      _textDelay: []
   - _id: 2
     _cardEffects:
     - _value: 1
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - "I quoth \u201Chello\u201D to darkness mine ol' friend, and it told me that
+        it be not mine friend."
+      _textDelay: []
   - _id: 3
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 1
-      _text: []
+      _text:
+      - Thou shalt begone from my sight!
+      _textDelay: []
   - _id: 4
     _cardEffects:
     - _value: 5
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - What didst baby corn sayeth to mama corn? Where's pop-corn?
+      _textDelay: []

@@ -19,33 +19,38 @@ MonoBehaviour:
       _type: 0
       _skillType: 0
       _text:
-      - 
+      - What didst the toilet say ere it refrained working? "I'm too ol' for this
+        shit. "
       _textDelay: []
   - _id: 1
     _cardEffects:
     - _value: 1
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - Were I tasked to save twain of each animal. Well, I Noah guy.
       _textDelay: []
   - _id: 2
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - The only abs I hast are abnormalities!
       _textDelay: []
   - _id: 3
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - Perhaps I am obnoxious, yet at least I am annoying, too.
       _textDelay: []
   - _id: 4
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 1
-      _text: []
+      _text:
+      - Take that!
       _textDelay: []
