@@ -3310,6 +3310,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5473763
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5473763
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90943396
+      objectReference: {fileID: 0}
     - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
       propertyPath: _audioSource
       value: 

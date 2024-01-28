@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1530269706267164741, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_text
-      value: Hum, what is that smell?
+      value: I'd like to return to my wife.
       objectReference: {fileID: 0}
     - target: {fileID: 1530269706267164741, guid: 49065dac5995bda49ad5f69de3d9d626, type: 3}
       propertyPath: m_fontAsset
@@ -3323,6 +3323,14 @@ PrefabInstance:
       propertyPath: _enemy._laughterBar
       value: 
       objectReference: {fileID: 1680659346}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._dmgTakenTexts.Array.data[0]
+      value: That wasth darker than expected.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._halfDmgTakenTexts.Array.data[0]
+      value: Thou must wash thy mouth after that filth.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
