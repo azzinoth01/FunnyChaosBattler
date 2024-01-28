@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a1c73094339cc42935443f75961464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turnChangeText: {fileID: 2021626809}
+  _turnChangeText: {fileID: 0}
 --- !u!1001 &252203448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1977,8 +1977,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Player Turn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b27bce2a80d68b8449065a67aa0e2e8b, type: 2}
+  m_sharedMaterial: {fileID: -3495946886201423474, guid: b27bce2a80d68b8449065a67aa0e2e8b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2002,8 +2002,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
