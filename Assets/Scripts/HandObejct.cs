@@ -1,13 +1,14 @@
 public class HandObejct : MonoBehaviour
 {
     [SerializeField] private List<Button> _cardButtons;
+    public GameObject currentlyHoveredCard;
+    public GameObject nextHoveredCard;
 
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private List<AudioClip> _attackSounds;
     [SerializeField] private List<AudioClip> _impacktSounds;
 
-    public GameObject currentlyHoveredCard;
-    public GameObject nextHoveredCard;
+>>>>>>>>> Temporary merge branch 2
 
     // Start is called before the first frame update
     void Start()
