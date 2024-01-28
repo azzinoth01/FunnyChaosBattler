@@ -18,10 +18,14 @@ MonoBehaviour:
     - _value: 10
       _type: 0
       _skillType: 0
-      _text: 
+      _text:
+      - What doth a cloud wear under their raincoat? Thunderwear.
+      _textDelay: []
   - _id: 1
     _cardEffects:
     - _value: 10
       _type: 0
       _skillType: 1
-      _text: 
+      _text:
+      - Thou shalt begone from my sight!
+      _textDelay: []

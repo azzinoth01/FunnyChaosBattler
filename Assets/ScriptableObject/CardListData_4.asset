@@ -20,6 +20,8 @@ MonoBehaviour:
       _skillType: 0
       _text:
       - Were I tasked to save twain of each animal. Well, I Noah guy.
+      _textDelay:
+      - 0
   - _id: 1
     _cardEffects:
     - _value: 10
@@ -27,6 +29,7 @@ MonoBehaviour:
       _skillType: 0
       _text:
       - I am the ace of disgrace!
+      _textDelay: []
   - _id: 2
     _cardEffects:
     - _value: 5
@@ -35,6 +38,7 @@ MonoBehaviour:
       _text:
       - I ate four cans of alphabet soup yesterday.  Then I had belike the greatest
         vowel movement aye.
+      _textDelay: []
   - _id: 3
     _cardEffects:
     - _value: 1
@@ -42,6 +46,7 @@ MonoBehaviour:
       _skillType: 0
       _text:
       - 'Dad, didst thou get a haircut? Ney, I hast cuteth them all! '
+      _textDelay: []
   - _id: 4
     _cardEffects:
     - _value: 10
@@ -49,3 +54,4 @@ MonoBehaviour:
       _skillType: 1
       _text:
       - Thou shalt perish!
+      _textDelay: []
