@@ -18,28 +18,33 @@ MonoBehaviour:
     - _value: 4
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - Why do not  the circus lions eat the fools? Due to their funny taste.
   - _id: 1
     _cardEffects:
     - _value: 4
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - What doth a cloud wear under their raincoat? Thunderwear.
   - _id: 2
     _cardEffects:
     - _value: 2
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - How doth thou compose a good egg-roll? Thou pusheth it down a hill!
   - _id: 3
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - What didst the ocean sayeth to the beach? Nought, it just waved!
   - _id: 4
     _cardEffects:
     - _value: 10
       _type: 2
       _skillType: 1
-      _text: []
+      _text:
+      - Thou shalt begone from my sight!
