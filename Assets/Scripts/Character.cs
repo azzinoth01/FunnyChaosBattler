@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 [Serializable]
 public class Character
@@ -15,6 +17,16 @@ public class Character
     [SerializeField] private int _enemyDmg;
 
     private int _enemyReaction;
+
+    [SerializeField] private AudioSource _audioSource;
+
+    [SerializeField] private List<AudioClip> _dmgTakenSound;
+    [SerializeField] private List<AudioClip> _doubleDmgTakenSound;
+    [SerializeField] private List<AudioClip> _halfDmgTakenSound;
+    [SerializeField] private List<AudioClip> _laughterBreak;
+
+
+
 
     public int Hp
     {
@@ -52,6 +64,11 @@ public class Character
 
         // damage = (int)(damage * _type.GetTypeMultiplier(type));
         _hp = _hp - damage;
+
+
+
+        _audioSource.clip = _dmgTakenSound[Random.Range(0, _dmgTakenSound.Count)];
+
         UpdateHpBar();
     }
 
@@ -59,21 +76,46 @@ public class Character
     {
 
         float multiplier = _type.GetTypeMultiplier(type);
+
+
+        damage = (int)(damage * multiplier);
+        _laughter = _laughter - damage;
+
         if (multiplier == 2)
         {
             _enemyReaction = -1;
+            if (_laughter > 0)
+            {
+                _audioSource.clip = _doubleDmgTakenSound[Random.Range(0, _doubleDmgTakenSound.Count)];
+            }
         }
         else if (multiplier == 1)
         {
             _enemyReaction = 0;
+            if (_laughter > 0)
+            {
+                _audioSource.clip = _dmgTakenSound[Random.Range(0, _dmgTakenSound.Count)];
+            }
         }
         else
         {
             _enemyReaction = 1;
+            if (_laughter > 0)
+            {
+                _audioSource.clip = _halfDmgTakenSound[Random.Range(0, _halfDmgTakenSound.Count)];
+            }
         }
 
-        damage = (int)(damage * multiplier);
-        _laughter = _laughter - damage;
+
+        if (_laughter <= 0)
+        {
+
+            _audioSource.clip = _laughterBreak[Random.Range(0, _laughterBreak.Count)];
+
+        }
+
+        _audioSource.Play();
+
         UpdateLaughterBar();
     }
 
@@ -94,7 +136,9 @@ public class Character
 
     public void EnemyTurnDmg()
     {
-        int damage = 0;
+
+
+        int damage;
         if (_enemyReaction == -1)
         {
             damage = 0;
