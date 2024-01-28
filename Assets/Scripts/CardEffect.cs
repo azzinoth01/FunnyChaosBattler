@@ -10,6 +10,8 @@ public class CardEffect
     [SerializeField] private SkillTypeEnum _skillType;
     [SerializeField] private List<string> _text;
 
+    [SerializeField] private List<float> _textDelay;
+
     public int Value
     {
         get
@@ -59,6 +61,19 @@ public class CardEffect
         set
         {
             _text = value;
+        }
+    }
+
+    public List<float> TextDelay
+    {
+        get
+        {
+            return _textDelay;
+        }
+
+        set
+        {
+            _textDelay = value;
         }
     }
 }

@@ -59,6 +59,7 @@ public class HandObejct : MonoBehaviour
         foreach (CardEffect textEffect in card.CardEffects)
         {
             bool playerText = true;
+            int count = 0;
             foreach (string text in textEffect.Text)
             {
                 if (playerText == true)
@@ -76,7 +77,9 @@ public class HandObejct : MonoBehaviour
                     textfield.text = text;
                 }
                 playerText = !playerText;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(textEffect.TextDelay[count]);
+
+                count = count + 1;
             }
 
         }
