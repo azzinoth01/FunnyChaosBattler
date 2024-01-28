@@ -12,7 +12,7 @@ public class EnemyObject : MonoBehaviour
     [SerializeField] private List<AudioClip> _enemyImpactSound;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _enemy.Initzialize();
         GlobalGameInstance.Instance.Enemy = _enemy;
