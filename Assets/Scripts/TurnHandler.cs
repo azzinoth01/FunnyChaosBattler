@@ -14,7 +14,7 @@ public class TurnHandler : MonoBehaviour
 
         GlobalGameInstance.Instance.PlayerTurn = !GlobalGameInstance.Instance.PlayerTurn;
 
-        turnChange?.Invoke();
+
 
         if (GlobalGameInstance.Instance.PlayerTurn == false)
         {
@@ -26,11 +26,17 @@ public class TurnHandler : MonoBehaviour
         else
         {
             _turnChangeText.text = "Player turn";
+            turnChange?.Invoke();
         }
     }
     private void Awake()
     {
         GlobalGameInstance.Instance.TurnHandler = this;
+    }
+
+    public void InvokeTurnChangeEvent()
+    {
+        turnChange?.Invoke();
     }
 
 }
