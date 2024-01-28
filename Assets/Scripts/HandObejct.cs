@@ -77,7 +77,8 @@ public class HandObejct : MonoBehaviour
                     textfield.text = text;
                 }
                 playerText = !playerText;
-                yield return new WaitForSeconds(textEffect.TextDelay[count]);
+                //yield return new WaitForSeconds(textEffect.TextDelay[count]);
+                yield return new WaitForSeconds(3);
 
                 count = count + 1;
             }
