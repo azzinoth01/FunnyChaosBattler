@@ -64,9 +64,9 @@ public class EnemyObject : MonoBehaviour
     private IEnumerator DisplayTextForOneSecond(string text)
     {
 
-        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
+        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(true);
         GlobalGameInstance.Instance.EnemyTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
     }

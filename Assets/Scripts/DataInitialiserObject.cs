@@ -20,6 +20,8 @@ public class DataInitialiserObject : MonoBehaviour
 
         GlobalGameInstance.Instance.WinScreen = _winScreen;
         GlobalGameInstance.Instance.LoseScreen = _loseScreen;
+        GlobalGameInstance.Instance.PlayerTextBubble = _playerTextBubble;
+        GlobalGameInstance.Instance.EnemyTextBubble = _enemyTextBubble;
     }
 
 

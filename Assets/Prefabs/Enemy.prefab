@@ -122,6 +122,14 @@ MonoBehaviour:
     _laughterBreak:
     - {fileID: 8300000, guid: 114fa3d81f310ac419246b7ddb270d9b, type: 3}
     - {fileID: 8300000, guid: f7e5fef5078cae8468f39e18e84638e7, type: 3}
+    _dmgTakenTexts:
+    - normal joke
+    _doubleDmgTakenTexts:
+    - great joke
+    _halfDmgTakenTexts:
+    - bad joke
+    _laughterTexts:
+    - hahah
   _audioSource: {fileID: 0}
   _eneymAttackSound:
   - {fileID: 8300000, guid: 2c8f21e1c27fd7743a655705c0bc7164, type: 3}

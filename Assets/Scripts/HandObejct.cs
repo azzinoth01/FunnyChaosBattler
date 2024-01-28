@@ -72,11 +72,14 @@ public class HandObejct : MonoBehaviour
                     TextMeshProUGUI textfield = GlobalGameInstance.Instance.EnemyTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
                     textfield.text = text;
                 }
-
+                playerText = !playerText;
                 yield return new WaitForSeconds(1);
             }
 
         }
+
+        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
+        GlobalGameInstance.Instance.PlayerTextBubble.SetActive(false);
 
 
         _audioSource.clip = _attackSounds[Random.Range(0, _attackSounds.Count)];
