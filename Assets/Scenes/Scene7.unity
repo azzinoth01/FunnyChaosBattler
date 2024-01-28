@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4020ccda74ec2a4db1db10bbd35fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardData: {fileID: 11400000, guid: 6e52a439dcfd5bd458af509fa351e9c9, type: 2}
+  _cardData: {fileID: 11400000, guid: 28a30c8a844e5904ab9f2a59a1d967a0, type: 2}
   _winScreen: {fileID: 403067504}
   _loseScreen: {fileID: 280292631}
 --- !u!114 &178580066
