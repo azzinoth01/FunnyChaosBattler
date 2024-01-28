@@ -125,11 +125,11 @@ MonoBehaviour:
     _dmgTakenTexts:
     - normal joke
     _doubleDmgTakenTexts:
-    - great joke
+    - Such impeccable humor!
     _halfDmgTakenTexts:
     - bad joke
     _laughterTexts:
-    - hahah
+    - A! Ha ha ha!
   _audioSource: {fileID: 0}
   _eneymAttackSound:
   - {fileID: 8300000, guid: 2c8f21e1c27fd7743a655705c0bc7164, type: 3}
