@@ -1,3 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.UI;
+
 public class HandObejct : MonoBehaviour
 {
     [SerializeField] private List<Button> _cardButtons;
@@ -8,7 +14,6 @@ public class HandObejct : MonoBehaviour
     [SerializeField] private List<AudioClip> _attackSounds;
     [SerializeField] private List<AudioClip> _impacktSounds;
 
->>>>>>>>> Temporary merge branch 2
 
     // Start is called before the first frame update
     void Start()
