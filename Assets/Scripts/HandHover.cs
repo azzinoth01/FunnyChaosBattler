@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
     
@@ -8,17 +9,26 @@ public class HandHover : MonoBehaviour
 {
     public int currentHandPosition = 0;
     public Vector3 startingScale, newScale;
+    public Vector3 spawnPos; 
+    public Quaternion spawnRot;
     public GameObject thisGameObject;
     public static bool pointerIsEntered = false;
     public HandObejct Hand;
 
     private void Start()
     {
+        spawnPos = transform.localPosition;
+        spawnRot = transform.localRotation;
         EventTrigger trigger = GetComponent<EventTrigger>();
         startingScale = new Vector3(1, 1, 1);
-        newScale = new Vector3(4, 4, 4);
+        newScale = new Vector3(2, 2, 2);
     }
 
+    private void ResetToStart()
+    {
+        transform.localPosition = spawnPos;
+        transform.localRotation = spawnRot;
+    }
     IEnumerator WaitBetweenCards()
     {
         yield return new WaitForSeconds(1);
@@ -33,6 +43,8 @@ public class HandHover : MonoBehaviour
     public void OnPointerEnter()
     {
         transform.localScale = newScale;
+        transform.localPosition += new Vector3(0, 383, 0);
+        transform.localRotation = new Quaternion(0, 0, 0, 0);
         if (Hand.currentlyHoveredCard != null)
         {
             Hand.nextHoveredCard = gameObject;
@@ -47,6 +59,7 @@ public class HandHover : MonoBehaviour
     public void OnPointerExit()
     {
         transform.localScale = startingScale;
+        ResetToStart();
         if(Hand.currentlyHoveredCard == gameObject)
         {
             Hand.currentlyHoveredCard = null;
