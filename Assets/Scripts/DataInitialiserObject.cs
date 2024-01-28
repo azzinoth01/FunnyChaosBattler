@@ -9,6 +9,8 @@ public class DataInitialiserObject : MonoBehaviour
 
     private void Awake()
     {
+
+        GlobalGameInstance.Instance.CardData.Clear();
         foreach (Card card in _cardData.Cards)
         {
             GlobalGameInstance.Instance.CardData[card.Id] = card;
