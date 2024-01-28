@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a1c73094339cc42935443f75961464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turnChangeText: {fileID: 0}
+  _turnChangeText: {fileID: 2021626809}
 --- !u!1001 &252203448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1432,9 +1432,6 @@ MonoBehaviour:
   _cardButtons:
   - {fileID: 747716120}
   - {fileID: 1075315016}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   currentlyHoveredCard: {fileID: 0}
   nextHoveredCard: {fileID: 0}
   _audioSource: {fileID: 1615258880}

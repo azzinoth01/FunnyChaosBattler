@@ -15,25 +15,25 @@ MonoBehaviour:
   _cards:
   - _id: 0
     _cardEffects:
-    - _value: 1
+    - _value: 4
       _type: 2
       _skillType: 0
       _text: 
   - _id: 1
     _cardEffects:
-    - _value: 1
+    - _value: 10
       _type: 0
       _skillType: 0
       _text: 
   - _id: 2
     _cardEffects:
-    - _value: 10
+    - _value: 4
       _type: 2
       _skillType: 0
       _text: 
   - _id: 3
     _cardEffects:
-    - _value: 10
+    - _value: 2
       _type: 1
       _skillType: 0
       _text: 
