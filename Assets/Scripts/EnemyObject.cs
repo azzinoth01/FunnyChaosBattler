@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyObject : MonoBehaviour
@@ -17,6 +18,8 @@ public class EnemyObject : MonoBehaviour
         _enemy.Initzialize();
         GlobalGameInstance.Instance.Enemy = _enemy;
         GlobalGameInstance.Instance.EnemyObject = this;
+
+
     }
 
 
@@ -50,6 +53,22 @@ public class EnemyObject : MonoBehaviour
 
 
 
+    }
+
+    public void EnemyComebackText(string text)
+    {
+        StartCoroutine(DisplayTextForOneSecond(text));
+    }
+
+
+    private IEnumerator DisplayTextForOneSecond(string text)
+    {
+
+        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(true);
+        GlobalGameInstance.Instance.EnemyTextBubble.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
+        yield return new WaitForSeconds(2);
+
+        GlobalGameInstance.Instance.EnemyTextBubble.SetActive(false);
     }
 
 
