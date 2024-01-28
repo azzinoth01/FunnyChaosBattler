@@ -2135,9 +2135,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953167202}
     m_Modifications:
+    - target: {fileID: 1498711266100954416, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -830
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585097083748805136, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -740
+      objectReference: {fileID: 0}
     - target: {fileID: 5212639891397900411, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
       propertyPath: m_Name
       value: LvlProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7020858374321253158, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_Name
+      value: lvl0
       objectReference: {fileID: 0}
     - target: {fileID: 8059218989505615041, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
       propertyPath: m_Pivot.x
@@ -2219,6 +2231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8287673143105607693, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ef74e102c3375c4a897a8b3096284f5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

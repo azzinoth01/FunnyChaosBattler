@@ -2513,6 +2513,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953167202}
     m_Modifications:
+    - target: {fileID: 1498711266100954416, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -650
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103582646330213470, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -740
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361253645146640276, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 10f0b845aa6d87c48b8f0d400f0f9fff, type: 3}
     - target: {fileID: 5212639891397900411, guid: 0f704a8e751ee7343bf918b6b2180ca4, type: 3}
       propertyPath: m_Name
       value: LvlProgress
