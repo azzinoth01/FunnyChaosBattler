@@ -18,28 +18,33 @@ MonoBehaviour:
     - _value: 4
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - Were I tasked to save twain of each animal. Well, I Noah guy.
   - _id: 1
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 0
-      _text: []
+      _text:
+      - How doth a cucumber become a pickle? It goes through a jarring experience.
   - _id: 2
     _cardEffects:
     - _value: 4
       _type: 0
       _skillType: 0
-      _text: []
+      _text:
+      - What didst baby corn sayeth to mama corn? Where's pop-corn?
   - _id: 3
     _cardEffects:
     - _value: 2
       _type: 2
       _skillType: 0
-      _text: []
+      _text:
+      - Mine mother duels better than thou! And that though she already croaked.
   - _id: 4
     _cardEffects:
     - _value: 10
       _type: 1
       _skillType: 1
-      _text: []
+      _text:
+      - Thou shalt perish!

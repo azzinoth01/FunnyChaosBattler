@@ -3033,14 +3033,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2429933421376973210, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8377
-      objectReference: {fileID: 0}
-    - target: {fileID: 2429933421376973210, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8764
-      objectReference: {fileID: 0}
-    - target: {fileID: 2429933421376973210, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5846
       objectReference: {fileID: 0}
@@ -3084,26 +3076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685193475854034723, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7eded1a75bb74844c92a9089be1465c4, type: 3}
     - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 1483032828}
-    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
-      propertyPath: _enemy._type
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
       propertyPath: _enemy._hpBar
       value: 
@@ -3112,6 +3088,18 @@ PrefabInstance:
       propertyPath: _enemy._laughterBar
       value: 
       objectReference: {fileID: 1680659346}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._dmgTakenTexts.Array.data[0]
+      value: I heardeth that one from mine father.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._halfDmgTakenTexts.Array.data[0]
+      value: That's about as funny as Zwarte Piet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134909459238254457, guid: ed3c199066f97114dafd4661e355bc09, type: 3}
+      propertyPath: _enemy._doubleDmgTakenTexts.Array.data[0]
+      value: Emotional Damage!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
